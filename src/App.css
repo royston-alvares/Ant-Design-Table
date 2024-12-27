@@ -1,0 +1,114 @@
+.table-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .user-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .expanded-row-content {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  .expanded-row-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .expanded-row-item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+  }
+  
+  .expanded-row-item h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .expanded-row-item div {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .user-table {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .pagination {
+      text-align: center;
+    }
+  
+    .expanded-row-inner {
+      display: block;
+    }
+  
+    .expanded-row-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+      flex: 1 1 100%;
+    }
+  
+    .expanded-row-item h4 {
+      font-size: 16px;
+    }
+  
+    .expanded-row-item div {
+      font-size: 14px;
+    }
+  
+    .table-container {
+      padding: 10px;
+    }
+  
+    .ant-table th {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .ant-table td {
+      font-size: 14px;
+      padding: 12px 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .expanded-row-item {
+      flex: 1 1 100%;
+    }
+  
+    .expanded-row-item h4 {
+      font-size: 14px;
+    }
+  
+    .expanded-row-item div {
+      font-size: 12px;
+    }
+  
+    .user-table {
+      font-size: 12px;
+    }
+  
+    .pagination {
+      font-size: 14px;
+    }
+  }
+  
